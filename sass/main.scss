@@ -1,0 +1,25 @@
+//  LIBS SCSS
+@import "libs.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+//  HEADER
+@import "layout/header.scss";
+
+//  MAINCONTENT
+@import "layout/maincontent.scss";
+
+//  FOOTER
+@import "layout/footer.scss";

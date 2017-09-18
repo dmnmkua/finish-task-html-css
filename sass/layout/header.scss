@@ -1,0 +1,79 @@
+.header {
+  background: #fff url(../img/back-desktop.png) center center no-repeat;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  //  NAVIGATION
+  .nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    &__list {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+      justify-content: space-between;
+      background: #fff;
+    }
+
+    &__item {
+      width: 20%;
+
+      &:nth-child(3) {
+        position: relative;
+      }
+    }
+
+    &__link {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.2;
+      display: block;
+      padding: 22px 0;
+      width: 100%;
+      text-align: center;
+      transition: .3s;
+
+      &:hover {
+        background: lightblue;
+      }
+
+    }
+
+    &__item:nth-child(3) .nav__link:hover {
+      background: none;
+    }
+
+    &__logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+  }
+
+  //  STREAMER
+  &__streamer {
+    margin: 130px 0 90px 0;
+    text-align: center;
+  }
+}
