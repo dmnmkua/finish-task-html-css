@@ -1,12 +1,16 @@
 .header {
-  background: #fff url(../img/back-desktop.png) center center no-repeat;
+  background: #fff url(../img/back-desktop.png) center bottom no-repeat;
   background-size: cover;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+
+
+  
+
+
 
   //  NAVIGATION
   .nav {
@@ -14,6 +18,40 @@
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 99999;
+    transition: .5s;
+
+    @media screen and (max-width: 767px) {
+      // position: relative;
+    }
+
+    &--close {
+      top: -246px;
+    }
+
+    &__close-icon {
+      position: absolute;
+      border: none;
+      background: none;
+      color: #fff;
+      top: 16px;
+      right: 20px;
+      font-size: 1.5rem;
+    }
+
+    &__menu-icon {
+      position: absolute;
+      border: none;
+      background: none;
+      color: #76b0d4;
+      bottom: -55px;
+      right: 0px;
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: right;
+      background: #fff;
+      padding: 15px 15px;
+    }
 
     &__list {
       display: -webkit-flex;
@@ -25,13 +63,26 @@
       width: 100%;
       justify-content: space-between;
       background: #fff;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
     }
 
     &__item {
       width: 20%;
 
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        // box-shadow: 0px 1px 1px 1px rgba(1, 1, 1, .2);
+      }
+
       &:nth-child(3) {
         position: relative;
+
+        @media screen and (max-width: 767px) {
+          order: 1;
+        }
       }
     }
 
@@ -48,15 +99,27 @@
       font-weight: 700;
       line-height: 1.2;
       display: block;
-      padding: 22px 0;
+      padding: 20px 0;
       width: 100%;
       text-align: center;
       transition: .3s;
 
-      &:hover {
-        background: lightblue;
+      @media screen and (max-width: 767px) {
+        font-size: 1.125rem;
+        background: #76b0d4;
+        color: #fff;
       }
 
+      &:hover {
+        background: lightblue;
+        color: #fff;
+      }
+
+    }
+
+    &__item:nth-child(3) .nav__link {
+      padding: 0;
+      height: 0;
     }
 
     &__item:nth-child(3) .nav__link:hover {
@@ -73,7 +136,24 @@
 
   //  STREAMER
   &__streamer {
-    margin: 130px 0 90px 0;
+    margin: 70px 0 90px 0;
     text-align: center;
+
+    &-img {
+      max-width: 100%;
+    }
   }
+
+
+}
+
+.sub-header {
+  height: 63px;
+  background: transparent url(../img/intro-triangle.svg) center bottom no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }

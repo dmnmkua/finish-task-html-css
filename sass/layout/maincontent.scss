@@ -1,118 +1,20 @@
 //  PART FIRST
-.part-first {
-  &__desc-block {
-    margin: 50px auto;
-    max-width: 490px;
-    text-transform: uppercase;
-  }
-
-  &__title {
-    font-size: 1.313rem;
-    font-weight: 700;
-    line-height: 1.238;
-    text-align: center;
-    margin: 0;
-  }
-
-  &__desc {
-    font-size: .85rem;
-    font-weight: 400;
-    line-height: 1.238;
-    text-align: center;
-    margin: 0;
-    margin-top: 35px;
-    opacity: .5;
-  }
-}
-
+@import "./maincontent/part-first.scss";
 
 //  PART SECOND
-.part-second {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-
-  // DESCRIPTION
-  &__desc-block {
-    color: #fff;
-    width: 33.3%;
-    background: #76b0d4;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 70px 60px 70px;
-    text-transform: uppercase;
-
-  }
-
-  &__title {
-    margin: 0;
-    font-size: 1.313rem;
-    font-weight: 700;
-    line-height: 1.238;
-  }
-
-  &__sub-title {
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 20px 0 25px 0;
-  }
-
-  &__desc {
-    margin: 0;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-
-  //  IMAGE
-  &__img-block {
-    width: 66.6%;
-    background: #fff url(../img/photo-city@1x.png) center center no-repeat;
-    background-size: cover;
-  }
-}
-
+@import "./maincontent/part-second.scss";
 
 // PART THIRD
-.part-third {
+@import "./maincontent/part-third.scss";
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: space-around;
-  }
+//  PART FOURTH
+@import "./maincontent/part-fourth.scss";
 
-  &__item {
-    padding: 50px 70px 75px 70px;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-  }
+//  PART FIFTH
+@import "./maincontent/part-fifth.scss";
 
-  &__title {
-    color: #333;
-    font-size: 1.313rem;
-    font-weight: 700;
-    line-height: 1.238;
-    margin: 0;
-    margin-top: 32px;
-  }
+//  PART SIX
+@import "./maincontent/part-six.scss";
 
-  &__desc {
-    color:  #333;
-    font-size: .875rem;
-    font-weight: 400;
-  }
-}
+//  PART SEVEN
+@import "./maincontent/part-seven.scss";
