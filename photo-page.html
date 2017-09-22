@@ -21,9 +21,12 @@
 
 	<!-- Libs CSS
 	============================================ -->
-
 	<link rel="stylesheet" href="style/libs.css">
 
+
+	<!-- modal CSS
+	============================================ -->
+	<link rel="stylesheet" href="style/the-modal.css" media="all">
 
 	<!-- Favicon
 	============================================ -->
@@ -31,7 +34,6 @@
 
 	<!-- Theme CSS
 	============================================ -->
-
 	<link rel="stylesheet" href="style/photo.css">
 
 
@@ -68,13 +70,12 @@
 	<!-- maincontent
 	============================================ -->
 
-	<div class="maincontent">
-		<div class="container flex-container">
+	<div class="photocontent">
+
 			<!-- first text wrap -->
 			<div class="photo-page__text-wrap">
 				<h2 class="photo-page__title">фото и видео</h2>
-				<p class="photo-page__desc">не можете решиться на путишествие из-за курса?</p>
-				<p class="photo-page__desc">фотографии помогут вам забыть о политике и экономике.</p>
+				<p class="photo-page__desc">не можете решиться на путишествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
 			</div><!-- ./first text wrap -->
 
 			<!-- photo gallery -->
@@ -89,6 +90,7 @@
 							<figure class="gallery__img-wrap">
 								<img src="img/gallery/photo-1-desktop.jpg" alt="road" class="gallery__img" title="Road">
 							</figure>
+						<!-- </a> -->
 							<div class="gallery__desc-wrap">
 
 								<!-- title and autor wrap -->
@@ -99,7 +101,10 @@
 
 								<!-- like wrap -->
 								<div class="gallery__like-wrap">
-									<i class="fa fa-thumbs-o-up gallery__like-btn" aria-hidden="true"></i>
+									<label for="button" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
 									<span class="gallery__like-count">1350</span>
 								</div><!-- ./like wrap -->
 							</div>
@@ -127,7 +132,10 @@
 
 								<!-- like wrap -->
 								<div class="gallery__like-wrap">
-									<i class="fa fa-thumbs-o-up gallery__like-btn" aria-hidden="true"></i>
+									<label for="button2" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button2">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
 									<span class="gallery__like-count">143</span>
 								</div><!-- ./like wrap -->
 							</div>
@@ -155,7 +163,10 @@
 
 								<!-- like wrap -->
 								<div class="gallery__like-wrap">
-									<i class="fa fa-thumbs-o-up gallery__like-btn" aria-hidden="true"></i>
+									<label for="button3" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button3">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
 									<span class="gallery__like-count">96</span>
 								</div><!-- ./like wrap -->
 							</div>
@@ -183,7 +194,10 @@
 
 								<!-- like wrap -->
 								<div class="gallery__like-wrap">
-									<i class="fa fa-thumbs-o-up gallery__like-btn" aria-hidden="true"></i>
+									<label for="button4" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button4">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
 									<span class="gallery__like-count">254</span>
 								</div><!-- ./like wrap -->
 							</div>
@@ -206,25 +220,9 @@
 
 			<!-- video -->
 			<div class="photo-page__video-wrap">
-				<a href="#" class="video__link" title="Play video">
-					<figure class="video-wrap">
-						<img src="img/video/video-desktop.jpg" alt="Video" class="photo-page__video" title="Video">
-					</figure>
-					<div class="player-nav-wrap">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="20" viewBox="0 0 16 20" class="player-nav__replay">
-							<image id="replay.svg" width="16" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAQAAAAua3X8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCRIRCQLE5IzAAAAAiUlEQVQoz32RURHEMAhEd6oECSchUuKsUiKhFs5BJbz7IO1cGAJ8JftCFhBa8gxnRZkKOKECXN4Cj+wx6DUAcGH5F43OAODG9ib7rFK06UgPnpdBDWBE4D87wKF9fCXpEEJtT3kFSzW/dSuph2lytpNb9DavBFkGZdzvihqfbNQ2q5TLet6Fdf8A8fVtaIhRT1QAAAAASUVORK5CYII="/>
-						</svg>
-						<div class="line"></div>
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="20" viewBox="0 0 32 20" class="player-nav__subtitles">
-							<image id="subtitles.svg" width="32" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAQAAABGmPfEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCRIRCQQthyn1AAAA2UlEQVQ4y82U4U3DMBCFP1AHMBuEDcwGyQhsUDahk7SMwATJBs4G6QbJBh8/gKjESVVhCXGWLN3p3pPvPZ0x2PrbaA0UwFXbO6Uo7svgWwQnnnnkiYYegIkDDQ80vGS9K3PtZT5JHazmvFo25wSvYjRdVGpx77iuYk4Q/OlMEqstuC416JkI1BeVd6Am3CriBMSsq/pjG7uscr7CcJOIYVvEdRu/F2x0VKMYHVS/7qsEnwDEIB7VZJhzlm/ZrUyVOPHGmUBFBCIDB3p66tyP/7CNXRG+o/RL+wB+piSrS2IyjQAAAABJRU5ErkJggg=="/>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20" class="player-nav__fullscreen">
-							<image id="fullscreen.svg" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCRIRCQOz47xWAAAAUElEQVQoz2P8/58BARgZUAGSHBMDkYBohSxQ2hGrLCPCAYxQNzLiMew/SVYz/idSIfV9PRQUsjA4MDAwMDAcwKPGgYGBFjFDcurB7gCaJlwAny8OpBgOKPUAAAAASUVORK5CYII="/>
-						</svg>
-					</div>
-				</a>
+				<i class="fa fa-play photo-page__play-btn" aria-hidden="true" id="play-btn"></i>
+				<img title="Play video" src="http://img.youtube.com/vi/p2X4U1mQzoE/maxresdefault.jpg" width="800" height="500" class="photo-page__video-img" alt="video-jpg" id="video">
 			</div><!-- ./video -->
-		</div>
 	</div> <!-- /.maincontent -->
 
 	<!-- footer
@@ -233,7 +231,6 @@
 	<footer class="footer">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque deleniti nisi accusantium consectetur, qui quisquam consequatur ipsam, repellendus dolorem distinctio. Facere similique reiciendis consequatur deserunt excepturi saepe eum a, numquam.
 	</footer> <!-- /.footer -->
-
 
 
 
@@ -253,8 +250,14 @@
 <script src="js/script.plugin.js"></script>
 
 
+<!-- script modal
+============================================ -->
+<script src="js/modal-video.js"></script>
+<!-- <script src="js/jquery.the-modal.js"></script> -->
+
 <!-- script custom
 ============================================ -->
+<!-- <script src="js/scroll.js"></script> -->
 <script src="js/script.custom.js"></script>
 </body>
 </html>
