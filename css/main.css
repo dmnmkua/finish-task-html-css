@@ -107,6 +107,9 @@ body {
       .header .nav__link:hover {
         background: lightblue;
         color: #fff; }
+        @media screen and (max-width: 767px) {
+          .header .nav__link:hover {
+            background: #76b0d4; } }
     .header .nav__item:nth-child(3) .nav__link {
       padding: 0;
       height: 0; }
@@ -259,7 +262,7 @@ body {
     @media screen and (max-width: 767px) {
       .part-third__item {
         flex-direction: row;
-        width: 280px;
+        width: 270px;
         align-items: flex-start;
         text-align: left; } }
     @media screen and (max-width: 767px) {
@@ -385,9 +388,9 @@ body {
     @media screen and (max-width: 767px) {
       .part-fifth__item {
         width: 280px;
-        padding: 20px 0; } }
-    .part-fifth__item:not(:last-child) {
-      border-bottom: 1px solid #bbb; }
+        padding: 20px 0; }
+        .part-fifth__item:not(:last-child) {
+          border-bottom: 1px solid #bbb; } }
   .part-fifth__title {
     margin: 0;
     font-size: 1.313rem;
