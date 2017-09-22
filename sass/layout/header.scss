@@ -15,14 +15,16 @@
     width: 100%;
     z-index: 99999;
     transition: .5s;
+    will-change: top;
 
     @media screen and (max-width: 767px) {
       // position: relative;
+      &--close {
+        top: -246px;
+      }
     }
 
-    &--close {
-      top: -246px;
-    }
+
 
     &__close-icon {
       position: absolute;
@@ -32,6 +34,11 @@
       top: 16px;
       right: 20px;
       font-size: 1.5rem;
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
     }
 
     &__menu-icon {
@@ -46,6 +53,12 @@
       text-align: right;
       background: #fff;
       padding: 15px 15px;
+      display: none;
+      outline: none;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
     }
 
     &__list {
@@ -98,6 +111,7 @@
       width: 100%;
       text-align: center;
       transition: .3s;
+      will-change: background, color;
 
       @media screen and (max-width: 767px) {
         font-size: 1.125rem;
