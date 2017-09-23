@@ -584,6 +584,9 @@ body {
       padding-right: 10px;
       text-transform: uppercase; }
 
+body {
+  font-family: 'PT Sans', sans-serif; }
+
 .desc-wrap {
   color: #333;
   text-align: center;
