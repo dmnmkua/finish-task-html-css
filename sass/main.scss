@@ -2,7 +2,8 @@
 @import "libs.scss";
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 .wrapper {
   position: relative;
   top: 56px;
+  -webkit-transition: .5s;
   transition: .5s;
 
   @media screen and (max-width: 767px) {
@@ -37,3 +39,6 @@ body {
 
 //  FOOTER
 @import "layout/footer.scss";
+
+//  FORM
+@import "./layout/form/form.scss";

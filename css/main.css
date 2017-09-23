@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -10,6 +11,7 @@ body {
 .wrapper {
   position: relative;
   top: 56px;
+  -webkit-transition: .5s;
   transition: .5s; }
   @media screen and (max-width: 767px) {
     .wrapper {
@@ -581,5 +583,363 @@ body {
     .footer__label-text {
       padding-right: 10px;
       text-transform: uppercase; }
+
+.desc-wrap {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  width: 440px;
+  margin: 0 auto;
+  margin-top: 70px; }
+  .desc-wrap__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 0.867;
+    margin: 0; }
+  .desc-wrap__desc {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.238;
+    margin: 0;
+    margin-top: 30px; }
+
+.form__first-section {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between; }
+.form__impression {
+  border: none;
+  width: 50%; }
+  .form__impression-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.313rem;
+    font-weight: 700;
+    line-height: 1.238;
+    letter-spacing: .01px;
+    margin: 0; }
+  .form__impression-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px; }
+  .form__impression-item {
+    padding: 0;
+    margin: 0; }
+    .form__impression-item:not(:last-child) {
+      margin-bottom: 60px; }
+  .form__impression-radio {
+    display: none; }
+  .form__impression-label {
+    position: relative;
+    left: 75px;
+    color: #333;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.444; }
+    .form__impression-label:before {
+      content: "";
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      left: -75px;
+      bottom: -100%;
+      box-shadow: inset 0 0 0 28px #f2f2f2; }
+  .form__impression-radio:checked + .form__impression-label:before {
+    box-shadow: inset 0 0 0 17px #f2f2f2;
+    background: #333; }
+.form__about {
+  border: none;
+  border-left: 1px solid #f2f2f2;
+  padding: 0 80px;
+  width: 50%; }
+  .form__about-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.313rem;
+    font-weight: 700;
+    line-height: 1.238;
+    letter-spacing: .01px;
+    margin: 0; }
+  .form__about-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 60px; }
+  .form__about-item {
+    padding: 0;
+    margin: 0;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .form__about-item:not(:last-child) {
+      margin-bottom: 26px; }
+  .form__about-label {
+    margin-right: 20px;
+    color: #333;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.857;
+    text-transform: uppercase; }
+  .form__about-text-field {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.444;
+    border: none;
+    background: #f2f2f2; }
+.form__contacts {
+  border: none;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 80px;
+  color: #333; }
+  .form__contacts-forms {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-top: 77px; }
+  .form__contacts-title {
+    font-size: 1.313rem;
+    font-weight: 700;
+    line-height: 1.238;
+    text-transform: uppercase;
+    position: relative; }
+    .form__contacts-title span {
+      background: #fff;
+      padding: 20px; }
+    .form__contacts-title:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: #dbdbdb;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: -999; }
+  .form__contacts-phone {
+    width: 50%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center; }
+    .form__contacts-phone-text {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.857;
+      text-transform: uppercase;
+      margin-right: 20px; }
+    .form__contacts-phone-field {
+      position: relative; }
+  .form__contacts-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 22px;
+    background: #e6e6e6;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .form__contacts-input {
+    padding: 18px;
+    background: #f2f2f2;
+    border: none; }
+  .form__contacts-email {
+    width: 50%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center; }
+    .form__contacts-email-text {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.857;
+      text-transform: uppercase;
+      margin-right: 20px; }
+    .form__contacts-email-field {
+      position: relative; }
+
+/*-- adjustment settings */
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+body {
+  background: #FCFCFC;
+  position: relative;
+  margin: 0 auto; }
+
+.photocontent {
+  flex-grow: 1;
+  padding-top: 113px;
+  padding-bottom: 121px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+/**
+ * Global page settings */
+.form__heading {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.3125rem;
+  line-height: 1.4375rem;
+  line-height: 1.238;
+  text-transform: uppercase;
+  background: #FFF;
+  position: relative;
+  z-index: 999;
+  padding: 0 20px; }
+  .form__heading:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 97%;
+    z-index: -1;
+    padding: 0 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #EFEFEF; }
+
+/**
+ * Form */
+.form {
+  padding: 102px 120px;
+  display: flex;
+  flex-flow: column wrap; }
+
+.form__emotion-text {
+  margin-top: 60px;
+  padding: 22px;
+  resize: none;
+  width: 100%;
+  height: 160px;
+  border: none;
+  background: #EFEFEF;
+  font-family: "PT Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  line-height: 1.444; }
+
+/* placeholders */
+.form__emotion-text::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1; }
+
+.form__emotion-text:-moz-placeholder {
+  color: #000;
+  opacity: 1; }
+
+.form__emotion-text::-moz-placeholder {
+  color: #000;
+  opacity: 1; }
+
+.form__emotion-text:-ms-input-placeholder {
+  color: #000;
+  opacity: 1; }
+
+/** places wrap */
+.form__places-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.form__places-input-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 0; }
+
+.form__place-checkbox {
+  display: none; }
+  .form__place-checkbox:not(:first-child) {
+    margin-left: auto; }
+  .form__place-checkbox:checked + .form__place-name:before {
+    content: ">"; }
+
+.form__place-name {
+  font-family: "PT Sans", sans-serif;
+  color: #000;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  line-height: 1.444;
+  margin-left: 25px;
+  cursor: pointer; }
+  .form__place-name:before {
+    content: "";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    font-size: 2rem;
+    font-weight: bold;
+    transform: rotate(90deg);
+    margin-right: 25px;
+    vertical-align: middle;
+    background: #EFEFEF; }
+
+/** submit wrap */
+.form__submit-wrap {
+  display: flex;
+  margin-top: 58px; }
+
+.form__send {
+  font-family: "PT Sans", sans-serif;
+  color: #FFF;
+  font-size: 1.3125rem;
+  line-height: 1.4375rem;
+  line-height: 1.238;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  background: #80B3D1;
+  width: 50%;
+  text-transform: uppercase; }
+
+.form__need-stroke {
+  padding: 5px 0;
+  font-family: "PT Sans", sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  line-height: 1.875;
+  text-transform: uppercase;
+  width: 50%;
+  text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
